@@ -1,5 +1,6 @@
 import io.github.bonigarcia.wdm.ChromeDriverManager;
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
@@ -26,6 +27,7 @@ public class TestClass {
     @Test
     public void test(){
         driver.navigate().to("https://www.google.com/");
+        Assert.assertEquals("Googlex", driver.getTitle());
     }
 
     @After

@@ -27,7 +27,7 @@ public class TestClass {
     @Test
     public void test(){
         driver.navigate().to("https://www.google.com/");
-        Assert.assertEquals("Googlex", driver.getTitle());
+        Assert.assertEquals("Google", driver.getTitle());
     }
 
     @After
